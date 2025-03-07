@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- boostrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- boostrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- boostrap icon cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- external style sheet (CSS) link -->
+     <link rel="stylesheet" href="ASSETS/CSS/styles.css">
+
+     <!-- favicon link -->
+     <link rel="icon" type="image/x-icon" href="ASSETS/IMAGES/Akm.png">
+
+    <title>AKM Courier Service Signup Form</title>
+
+    <style>
+
+        *{
+            color: white;
+        }
+
+        .form-field {
+            width: 100%;
+            height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        #signupForm {
+            background-color: brown;
+        }
+
+        .clear button {
+            background-color: blue;
+            padding: 10px;
+            width: 100%;
+            color: white;
+        }
+
+        button:hover {
+            background-color: maroon;
+        }
+
+        input[type="submit"] {
+            background-color: blue;
+            width: 100%;
+            padding: 10px;
+        }
+
+        @media screen (max-width:400px) {
+
+            #signupForm {
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+
+<!-- navbar section start -->
+    
+<section class="sec-one" id="sec-nav">
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-secondary">
+      <div class="container-fluid logo-img">
+        <a class="navbar-brand logo" href="#" style="color: brown; font-weight: bolder; font-family: 'Times New Roman', Times, serif; padding-left: 5px;"> <img src="ASSETS/IMAGES/Akm.png" alt="logo" style="width: 60px; height: 60px;">Akm Courier Service</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto nbr-links" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;">
+            <li class="nav-item">
+              <a class="nav-link active" style="color: brown;" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html#gallery">Gallary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html#team">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Language
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tamil</a></li>
+                <li><a class="dropdown-item" href="">English</a></li>
+              </ul>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="contact.html">Contact</a>
+            </li>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-SignUP btn-lg align-items-center text-white" style="background-color: brown; border-radius: 15px;">SignUp</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+</section>
+
+<!-- navbar section end -->
+    
+<section class="form-field">
+
+    <div class="container">
+
+        <div class="row pb-4" style="padding-top: 250px;">
+
+            <form action="" method="get" id="signupForm" style="width: 50%; margin-left: auto; margin-right: auto;">
+
+                <h1 class="text-center pt-2">SignUp Form</h1>
+
+                <div class="pb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+                </div>
+    
+                <div class="pb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your Email Address">
+                </div>
+    
+                <div class="pb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                </div>
+    
+                <div class="pb-3 text-center">
+                    <input type="submit" value="SignUp">
+                </div>    
+
+                <div class="pb-3 text-center d-flex">
+                    <p id="savedName"></p>
+                    <p id="savedEmail"></p>
+                </div>  
+
+                <div class="pb-3 text-center clear">
+                    <button type="button" id="clearData">Clear</button>
+                </div>  
+
+            </form>
+
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- footer section start -->
+
+<section class="sec-footer bg-secondary" id="footer">
+
+    <footer>
+      <div class="container">
+        <div class="row">
+
+          <!-- Akm Courier Service -->
+
+          <div class="col-lg-4">
+            <div class="footer">
+              <h2 class="ft-Head pt-5"><span>Akm</span> Courier Service</h2>
+              <p class="mt-5">
+                Neithal, Thuraimugam, karainagar, <br>
+                Jaffna, Srilanka.
+              </p>
+              <div class="pt-3">
+                <p><b>Phone :</b>+94 076 198 9195</p>
+                <p><b>Email :</b>mohanapriyanpriyan4@gmail.com</p>
+              </div>
+            </div>
+          </div>
+    
+           <!-- Useful links -->
+
+          <div class="col-lg-4">
+            <div class="footer">
+              <h5 class="pt-5">Useful Links</h5>
+              <ul class="mt-5">
+                <li><a href="index.html" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Home</a></li>
+                <li><a href="index.html#about" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>About Us</a></li>
+                <li><a href="index.html#services" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Services</a></li>
+                <li><a href="index.html#gallery" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Gallery</a></li>
+                <li><a href="#" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- Our Social Media Networks -->
+
+          <div class="col-lg-4">
+            <div class="footer">
+              <h5 class="pt-5">Our Social Networks</h5>
+              <p class="mt-5">Follow our social media to know about our offers.</p>
+                <div class="d-flex smi">
+                  <p class="px-3"><a href="https://www.facebook.com/share/1BYyizKa97/?mibextid=qi2Omg"><i class="bi bi-facebook"></i></a></p>
+                  <p class="px-3"><a href="https://wa.me/+940761989195"><i class="bi bi-whatsapp"></i></a></p>
+                  <p class="px-3"><a href="https://www.tiktok.com/@akm_mohanapriyan?_t=ZS-8uSihfZ2KGN&_r=1"><i class="bi bi-tiktok"></i></a></p>
+                  <p class="px-3"><a href="https://www.instagram.com/blacklover_akm?igsh=cHB0NXZ4eW9qOWYy"><i class="bi bi-instagram"></i></a></p>
+                </div>                
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <section style="background-color: #f4a36d;">
+
+        <div class="container">
+          <div class="row foot pt-3">
+            <div class="col-md-6">
+              <p>&copy; Copyrights <span class="akm">Akm </span><span >Courier Service</span> All Right Reserved</p>
+            </div>
+            <div class="col-md-6">
+              <p style="float: right;">Designed By : <span class="name">Akm Mohanapriyan</span></p>
+            </div>
+          </div>
+          </div>
+  
+      </section>
+      
+    </footer>
+
+
+</section>
+
+<!-- footer section end -->
+
+
+    <script type="text/javascript" src="ASSETS/JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar section style start */
+
+/* navbar section style end */
+
+
+/* header section style start */
+
+.header {
+    background-image: linear-gradient(rgba(0,0,2,0.9),rgba(0,0,0,0.6)) ,url(../IMAGES/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 350px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.header .content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1px magenta;
+}
+
+.header .content h1 span {
+    color: rgb(230, 213, 213);
+    text-decoration: underline;
+}
+
+.content h2, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+p a {
+    text-decoration: none;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 7px;
+    color: burlywood;
+}
+
+/* create responsive layout */
+@media (min-width:459px) and (max-width:459px){
+
+    .header {
+        height: 100%;
+    }
+
+    .content {
+        margin-top: 130px;
+        margin-bottom: 35px;
+
+    }
+}
+
+/* header section style end */
+
+
+/* about section style start */
+
+    .about-us {
+        background-image: linear-gradient(rgba(0,0,2,0.9),rgba(0,0,0,0.3)) , url(../IMAGES/about.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .about-us .row {
+        padding-top: 280px;
+        color: white;
+    }
+
+    .about-us h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: white;
+        font-size: 50px;
+    }
+
+    .about-us p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-size: 24px;
+    }
+
+    /* create responsive layout */
+    @media (max-width:1050px) {
+
+        .about-us {
+            height: 100%;
+        }
+
+        .about-us .row {
+            padding-top: 50px;
+            padding-bottom: 35px;
+
+        }
+
+    }
+
+    @media (max-width:990px) {
+
+        .about-us .a-us-img img {
+            width: 100%;
+        }
+
+    }
+/* about section style end */
+
+
+/* services section start */
+
+    #services {
+        background-image: linear-gradient(rgba(0,0,2,0.9),rgba(0,0,0,0.3)) , url(../IMAGES/services\ bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #services h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: white;
+    }
+
+/* services section end */
+
+
+/* gallery section satart */
+
+    #gallery {
+        width: 100%;
+        padding-top: 150PX;
+    }
+
+/* gallery section end */
+
+
+/* section team start */
+
+#team .card-body {
+    background-image: linear-gradient(rgb(102, 20, 0), rgb(201, 123, 7));
+    color: white;
+}
+
+/* section team end */
+
+/* section footer style start */
+
+.footer, .foot {
+    color: white;
+}
+.sec-footer h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.sec-footer h2 span {
+    color: brown;
+    text-decoration: underline;
+}
+
+.sec-footer h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer li:hover{
+    background-color: brown;
+
+}
+
+.smi a:hover {
+    color: magenta;
+}
+
+.foot {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.foot .akm {
+    color: brown;
+    text-decoration: underline;
+}
+
+.foot .name {
+    color: brown;
+    font-weight: bold;
+}
+
+.foot p span {
+    color: brown;
+}
+
+/* section footer style end */
