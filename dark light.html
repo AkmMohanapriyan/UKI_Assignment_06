@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- boostrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- boostrap icon cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+        .dark-mood {
+            background-color: black;
+            color: white;   
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+
+<body>
+
+    <button onclick="myFunction()" id="theme"></button>
+
+
+    <script>
+
+        let themeBtn = document.getElementById("theme");
+
+        themeBtn.addEventListener("click", function() {
+
+        var element = document.body;
+            element.classList.toggle("dark-mood");
+            var button = document.querySelector("#theme");
+            if (element.classList.contains("dark-mood")) {
+                // button.innerHTML = "Light Mood";
+                button.classList= "bi bi-sun";
+            } else {
+                // button.innerHTML = "Dark Mood";
+                button.classList= "bi bi-moon";
+            }
+            // Save the current mode in local storage
+            localStorage.setItem("darkMode", element.classList.contains("dark-mood") ? "enabled" : "disabled");
+
+
+         });
+
+
+    </script>
+</body>
+
+</html>

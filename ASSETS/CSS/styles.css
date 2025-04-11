@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
+/* top button style start */
+.scroll-up-btn {
+    all: unset;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background-color: brown;
+    color: white;
+    border-radius: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.scroll-up-btn:hover {
+    background-color: white;
+    color: brown;
+}
+
+
+/* top button style end */
+
 /* navbar section style start */
 
 /* navbar section style end */
