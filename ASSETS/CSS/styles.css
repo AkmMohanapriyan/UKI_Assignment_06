@@ -248,3 +248,56 @@ p a {
 }
 
 /* section footer style end */
+
+
+/* typewriter style start */
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+}
+
+.static-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: 10px;
+    color: white;
+}
+
+.typing-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+    color: magenta;
+}
+
+.typing-text::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #fff;
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .static-text, .typing-text {
+        font-size: 1.5rem;
+    }
+    .typing-container {
+        display: block;
+    }
+}
