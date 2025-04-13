@@ -26,8 +26,12 @@
   <title>AKM Courier Service Signup Form</title>
 
   <style>
-    * {
+
+
+    body {
+      background-color: #f4a36d;
       color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .form-field {
@@ -38,27 +42,38 @@
     h1 {
       font-family: 'Times New Roman', Times, serif;
       font-weight: bold;
+      color: maroon;
     }
 
     #signupForm {
-      background-color: brown;
-    }
-
-    .clear button {
-      background-color: blue;
-      padding: 10px;
-      width: 100%;
-      color: white;
+      background-color: rgb(100, 100, 100);
+      border-radius: 5%;
     }
 
     button:hover {
-      background-color: maroon;
+      background-color: brown;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid maroon;
+      color: black;
     }
 
     input[type="submit"] {
-      background-color: blue;
+      background-color: maroon;
       width: 100%;
       padding: 10px;
+      border-color: maroon;
+    }
+
+    input[type="submit"]:hover {
+      background-color: black;
+      border-color: black;
     }
 
     @media screen (max-width:400px) {
@@ -67,7 +82,9 @@
         width: 100%;
       }
     }
+    
   </style>
+
 </head>
 
 <body>
@@ -130,48 +147,49 @@
 
   <!-- navbar section end -->
 
+
   <section class="form-field">
 
     <div class="container">
 
-      <div class="row pb-4" style="padding-top: 250px;">
+      <div class="row pb-2" style="padding-top: 220px;">
 
-        <form action="" method="get" id="signupForm" style="width: 50%; margin-left: auto; margin-right: auto;">
+        <form action="" method="get" id="signupForm" style="width: 30%; margin-left: auto; margin-right: auto;">
 
           <h1 class="text-center pt-2">SignUp Form</h1>
 
           <div class="pb-3">
             <label for="name" class="form-label">User Name</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+            <div id="userNameError"></div>
           </div>
 
           <div class="pb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email Address">
+            <div id="emailError"></div>
           </div>
 
           <div class="pb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+            <div id="pswError"></div>
           </div>
 
           <div class="pb-3">
             <label for="confirm_password" class="form-label">Confirm Password</label>
             <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Enter Password">
+            <div id="cnpswError"></div>
           </div>
 
           <div class="pb-3 text-center">
-            <input type="submit" value="SignUp">
+            <input type="submit" value="SignUp" id="submit" class="btn btn-primary" onclick="return validateForm() && showSuccessMessage() && saveToLocalStorage()">
           </div>
 
-          <div class="pb-3 text-center d-flex">
-            <p id="savedName"></p>
-            <p id="savedEmail"></p>
+          <div class="pb-3 d-flex justify-content-center text-center">
+            <p id="Success_msg"></p>
           </div>
 
-          <div class="pb-3 text-center clear">
-            <button type="button" id="clearData">Clear</button>
-          </div>
 
         </form>
 
@@ -266,10 +284,101 @@
 
   </section>
 
+
   <!-- footer section end -->
+   
+
+  <!-- external javascript -->
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirm_password").value;
+      var successMsg = document.getElementById("Success_msg");
+
+      var userNameError = document.getElementById("userNameError");
+      var emailError = document.getElementById("emailError");
+      var pswError = document.getElementById("pswError");
+      var cnpswError = document.getElementById("cnpswError");
 
 
-  <script type="text/javascript" src="ASSETS/JS/script.js"></script>
+      // Regular expressions for validation
+      var usernameRegex = /^[a-zA-Z0-9]+$/;
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+
+      if (name == "" || email == "" || password == "" || confirmPassword == "") {
+        // alert("Please fill in all fields.");
+        successMsg.innerHTML = "Please fill in all fields.";
+        successMsg.style.color = "#f4a36d";
+        return false;
+      }
+
+      if (!usernameRegex.test(name)) {
+        // alert("Username can only contain letters and numbers.");
+        userNameError.innerHTML = "Username can only contain letters and numbers.";
+        return false;
+      }
+      if (!emailRegex.test(email)) {
+        // alert("Please enter a valid email address.");
+        emailError.innerHTML = "Please enter a valid email address.";
+        return false;
+      }
+      if (!passwordRegex.test(password)) {
+        // alert("Password must be at least 8 characters long and contain at least one letter and one number.");
+        pswError.innerHTML = "Password must be at least 8 characters long and contain at least one letter and one number.";
+        return false;
+      }
+      if (password.length < 8) {
+        pswError.innerHTML = "Password must be at least 8 characters long.";  
+        // alert("Password must be at least 8 characters long.");
+        return false;
+      }
+      if (password.length > 20) {
+        pswError.innerHTML = "Password must be less than 20 characters long.";
+        // alert("Password must be less than 20 characters long.");
+        return false;
+      }
+      
+      if (password !== confirmPassword) {
+        cnpswError.innerHTML = "Passwords do not match.";
+        return false;
+      }
+
+      return true;
+    }
+    document.getElementById("signupForm").onsubmit = function() {
+      return validateForm();
+    };
+
+    function  showSuccessMessage() {
+      var successMsg = document.getElementById("Success_msg");
+      successMsg.innerHTML = "Form submitted successfully!";
+      successMsg.style.color = "green";
+    }
+    document.getElementById("signupForm").onsubmit = function() {
+      showSuccessMessage();
+      return false; // Prevent form submission for demonstration
+    };
+
+    // Clear error messages on input
+    document.getElementById("name").addEventListener("input", function() {
+      document.getElementById("userNameError").innerHTML = "";
+    });
+    document.getElementById("email").addEventListener("input", function() {
+      document.getElementById("emailError").innerHTML = "";
+    });
+    document.getElementById("password").addEventListener("input", function() {
+      document.getElementById("pswError").innerHTML = "";
+    });
+
+
+  </script>
+
+
+
 </body>
 
 </html>
