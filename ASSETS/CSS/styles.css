@@ -30,9 +30,6 @@
 
 /* top button style end */
 
-/* navbar section style start */
-
-/* navbar section style end */
 
 
 /* header section style start */
@@ -52,7 +49,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 350px;
+    margin-top: 300px;
     justify-content: center;
     border-radius: 10px;
 }
@@ -403,3 +400,17 @@ img {
     #carosel{width: 100%; height: 50vh}
 
 }
+
+
+.ml15 {
+    font-weight: 800;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  
+  .ml15 .word {
+    display: inline-block;
+    line-height: 0em;
+    color: brown;
+  }

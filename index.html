@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- boostrap css cdn link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- boostrap css cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- boostrap js cdn link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- boostrap js cdn link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <!-- boostrap icon cdn link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- boostrap icon cdn link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- external style sheet (CSS) link -->
-     <link rel="stylesheet" href="ASSETS/CSS/styles.css">
+  <!-- external style sheet (CSS) link -->
+  <link rel="stylesheet" href="ASSETS/CSS/styles.css">
 
-     <!-- favicon link -->
-     <link rel="icon" type="image/x-icon" href="ASSETS/IMAGES/Akm.png">
+  <!-- favicon link -->
+  <link rel="icon" type="image/x-icon" href="ASSETS/IMAGES/Akm.png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
-    <title>Akm Courier Service</title>
+
+  <title>Akm Courier Service</title>
 </head>
+
 <body>
 
-
+  <!-- scroll up page -->
   <button class="scroll-up-btn">
     <i class="bi bi-arrow-up-square-fill" style="border-radius: 100px;"></i>
-   </button>
+  </button>
 
   <!-- navbar section start -->
-    
+
   <section class="sec-one" id="sec-nav">
 
     <nav class="navbar navbar-expand-lg fixed-top bg-secondary">
       <div class="container-fluid logo-img">
-        <a class="navbar-brand logo" href="#" style="color: brown; font-weight: bolder; font-family: 'Times New Roman', Times, serif; padding-left: 5px;"> <img src="ASSETS/IMAGES/Akm.png" alt="logo" style="width: 60px; height: 60px;">Akm Courier Service</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand logo" href="#"
+          style="color: brown; font-weight: bolder; font-family: 'Times New Roman', Times, serif; padding-left: 5px;">
+          <img src="ASSETS/IMAGES/Akm.png" alt="logo" style="width: 60px; height: 60px;">Akm Courier Service</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
 
-          <ul class="navbar-nav ms-auto nbr-links" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;">
-        
+          <ul class="navbar-nav ms-auto nbr-links"
+            style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;">
+
             <li class="nav-item">
               <a class="nav-link active" style="color: brown;" aria-current="page" href="#">Home</a>
             </li>
@@ -59,7 +71,8 @@
               <a class="nav-link text-dark" href="#team">Team</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Language
               </a>
               <ul class="dropdown-menu">
@@ -67,76 +80,86 @@
                 <li><a class="dropdown-item" href="">English</a></li>
               </ul>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="contact.html">Contact</a>
+              <a class="nav-link text-dark" href="contact.html">Contact</a>
             </li>
             </li>
           </ul>
-          <a href="signup.html" class="btn btn-SignUP btn-lg align-items-center text-white" style="background-color: brown; border-radius: 15px;">SignUp</a>
+          <a href="signup.html" class="btn btn-SignUP btn-lg align-items-center text-white"
+            style="background-color: brown; border-radius: 15px;">SignUp</a>
           </ul>
         </div>
       </div>
     </nav>
-    
-</section>
+
+  </section>
 
   <!-- navbar section end -->
 
 
   <!-- header section start -->
 
-    <section class="header">
+  <section class="header">
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 content">
+      <div class="row">
+        <div class="col-md-12 content">
 
-                <h1 class="text-center pb-2"><span>Akm</span> Courier Service</h1>
+          <h1 class="text-center pb-2"><span>Akm</span> Courier Service</h1>
+          <h2 class="ml15" style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+            <span class="word">Welcome to</span>
+            <span class="word">Akm Courier Service!</span>
+          </h2>
 
-                <div class="typing-container">
-                  <div class="static-text">We deliver</div>
-                  <div id="typing-text" class="typing-text"></div>
-                </div>
+          <div class="typing-container">
+            <div class="static-text">We deliver</div>
+            <div id="typing-text" class="typing-text"></div>
+          </div>
 
-                <h2 class="text-white text-center">The Best Courier & Transportation Solutions</h2>
-                <p class="text-center text-white pt-2">Akm Courier Service provides efficient and secure delivery solutions for businesses and individuals.
-                We prioritize speed, reliability, and exceptional customer service.</p>
-                
-                <p class="text-center btn-visit pb-3 pt-3"><a href="signup.html">Visit Now</a></p>
+          <h3 class="text-white text-center">The Best Courier & Transportation Solutions</h3>
+          <p class="text-center text-white pt-2">Akm Courier Service provides efficient and secure delivery solutions
+            for businesses and individuals.
+            We prioritize speed, reliability, and exceptional customer service.</p>
 
-            </div>
+          <p class="text-center btn-visit pb-3 pt-3"><a href="signup.html">Visit Now</a></p>
+
         </div>
+      </div>
     </div>
 
-    </section>
+  </section>
 
   <!-- header section end -->
 
-     
+
   <!-- section aboutus start -->
-    
-      <section class="about-us" id="about">
 
-        <div class="container">
-            <div class="row">
+  <section class="about-us" id="about">
 
-              <h1 class="text-center pb-3">About Us</h1>
-                <div class="col-md-6 a-us-text">
-                    <p class="text-justify">We Get set situated at world wide are counted among the trustworthly and reputed transporters, courier service Providers. 
-                    We Provide a wide array of services comprising Transportation, freight forwarding, custom clearance, express, standard and corparate delivery services with the aim to make the shifting of the consignments faster and in a reliable way.
-                    With our ecconomical as well as satisfying services we serve a rich client base spread all across the nation. We perform all our activities with extreme sincerity and honestly.
-                    </p>
-                </div>
+    <div class="container">
+      <div class="row">
 
-                <div class="col-md-6 a-us-img">
-
-                    <img src="ASSETS/IMAGES/bike1.png" alt="Courier" class="w-100 h-100">
-
-                </div>
-
-            </div>
+        <h1 class="text-center pb-3">About Us</h1>
+        <div class="col-md-6 a-us-text">
+          <p class="text-justify">We Get set situated at world wide are counted among the trustworthly and reputed
+            transporters, courier service Providers.
+            We Provide a wide array of services comprising Transportation, freight forwarding, custom clearance,
+            express, standard and corparate delivery services with the aim to make the shifting of the consignments
+            faster and in a reliable way.
+            With our ecconomical as well as satisfying services we serve a rich client base spread all across the
+            nation. We perform all our activities with extreme sincerity and honestly.
+          </p>
         </div>
 
-      </section>
+        <div class="col-md-6 a-us-img">
+
+          <img src="ASSETS/IMAGES/bike1.png" alt="Courier" class="w-100 h-100">
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
 
   <!-- section aboutus start -->
 
@@ -144,95 +167,101 @@
   <!-- section service start -->
 
 
-      <section id="services">
+  <section id="services">
 
-        <div class="container">
+    <div class="container">
 
-          <div class="row pb-3 pt-5">
+      <div class="row pb-3 pt-5">
 
-            <h1 class="pt-5 pb-3 text-center">Our Services</h1>
+        <h1 class="pt-5 pb-3 text-center">Our Services</h1>
 
-            <div class="col-md-4 py-3">
+        <div class="col-md-4 py-3">
 
-              <div class="card h-100">
-                <a href="#ExD"><img src="ASSETS/IMAGES/expd.png" class="card-img-top" alt="..." onclick="myFunction()"></a>
-                <div class="card-body">
-                  <h3 class="text-center pt-2">Express Delivery</h3>
-                  <p class="card-text pt-2">This service ensures that your urgent documents or packages reach the recipient on top priority.</p>
-                </div>
-              </div>
-
+          <div class="card h-100">
+            <a href="#ExD"><img src="ASSETS/IMAGES/expd.png" class="card-img-top" alt="..." onclick="myFunction()"></a>
+            <div class="card-body">
+              <h3 class="text-center pt-2">Express Delivery</h3>
+              <p class="card-text pt-2">This service ensures that your urgent documents or packages reach the recipient
+                on top priority.</p>
             </div>
-
-            <div class="col-md-4 py-3">
-
-              <div class="card h-100">
-                <a href=""><img src="ASSETS/IMAGES/SDel.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h3 class="text-center pt-5">Standard Delivery</h3>
-                  <p class="card-text pt-4">Our team ensure that your congsignment reaches the recipient within the standard timeline.</p>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-md-4 py-3">
-
-              <div class="card h-100">
-                <a href=""><img src="ASSETS/IMAGES/CopDel.jpeg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h3 class="text-center pt-5">Corporate Delivery</h3>
-                  <p class="card-text pt-4">We cater to corparate clients, businesses and institutes and their need for sending congsignments in bulk.</p>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="row pb-5">
-
-            <div class="col-md-4 py-3">
-
-              <div class="card h-100">
-                <a href=""><img src="ASSETS/IMAGES/transport.png" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h3 class="text-center pt-2">Transportation</h3>
-                  <p class="card-text">We offer professionally managed Transportation services our esteemed clients along with vehicle Transportation.</p>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-md-4 py-3">
-
-              <div class="card h-100">
-                <a href=""><img src="ASSETS/IMAGES/ffdel.jpeg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h3 class="text-center pt-5">Freight Forwarding</h3>
-                  <p class="card-text pt-2">We offer wide range of freight forwarding services through our highly professional and trained staff.</p>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-md-4 py-3">
-
-              <div class="card h-100">
-                <a href=""><img src="ASSETS/IMAGES/ccdel.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h3 class="text-center pt-5">Custom Clearance</h3>
-                  <p class="card-text pt-4">We also take care of arranging inbound / outbound custom clearances. documentation and retrieval of goods.</p>
-                </div>
-              </div>
-
-            </div>
-
           </div>
 
         </div>
 
-      </section>
+        <div class="col-md-4 py-3">
+
+          <div class="card h-100">
+            <a href=""><img src="ASSETS/IMAGES/SDel.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h3 class="text-center pt-5">Standard Delivery</h3>
+              <p class="card-text pt-4">Our team ensure that your congsignment reaches the recipient within the standard
+                timeline.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 py-3">
+
+          <div class="card h-100">
+            <a href=""><img src="ASSETS/IMAGES/CopDel.jpeg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h3 class="text-center pt-5">Corporate Delivery</h3>
+              <p class="card-text pt-4">We cater to corparate clients, businesses and institutes and their need for
+                sending congsignments in bulk.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row pb-5">
+
+        <div class="col-md-4 py-3">
+
+          <div class="card h-100">
+            <a href=""><img src="ASSETS/IMAGES/transport.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h3 class="text-center pt-2">Transportation</h3>
+              <p class="card-text">We offer professionally managed Transportation services our esteemed clients along
+                with vehicle Transportation.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 py-3">
+
+          <div class="card h-100">
+            <a href=""><img src="ASSETS/IMAGES/ffdel.jpeg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h3 class="text-center pt-5">Freight Forwarding</h3>
+              <p class="card-text pt-2">We offer wide range of freight forwarding services through our highly
+                professional and trained staff.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 py-3">
+
+          <div class="card h-100">
+            <a href=""><img src="ASSETS/IMAGES/ccdel.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h3 class="text-center pt-5">Custom Clearance</h3>
+              <p class="card-text pt-4">We also take care of arranging inbound / outbound custom clearances.
+                documentation and retrieval of goods.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
 
   <!-- section service end -->
@@ -244,63 +273,68 @@
 
     <div class="container">
 
-        <div class="row">
+      <div class="row">
 
-            <h1 style="font-family: 'Times New Roman', Times, serif; color: brown; padding-top: 150px; text-align: center;">Express Delivery</h1>
+        <h1 style="font-family: 'Times New Roman', Times, serif; color: brown; padding-top: 150px; text-align: center;">
+          Express Delivery</h1>
 
-            <div class="col" style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 90px; background-color: rgb(252, 160, 23); border-radius: 20px;">
+        <div class="col"
+          style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 90px; background-color: rgb(252, 160, 23); border-radius: 20px;">
 
-                <h1 class="pt-5 text-center" style="font-family: 'Times New Roman', Times, serif; color: brown;">How much to send parcels to Sri Lanka?</h1>
+          <h1 class="pt-5 text-center" style="font-family: 'Times New Roman', Times, serif; color: brown;">How much to
+            send parcels to Sri Lanka?</h1>
 
-                <p class="text-justify pt-3" style="color: white;">When you send packages to Sri Lanka, you can be sure you’re getting a great
-                    service at a low price with Evri. You can send parcels up to 15kg. See how cheap it is to send a
-                    parcel to Sri Lanka based on some of our more popular weights.</p>
+          <p class="text-justify pt-3" style="color: white;">When you send packages to Sri Lanka, you can be sure you’re
+            getting a great
+            service at a low price with Evri. You can send parcels up to 15kg. See how cheap it is to send a
+            parcel to Sri Lanka based on some of our more popular weights.</p>
 
 
-                <div class="ExD pb-3 pt-3">
+          <div class="ExD pb-3 pt-3">
 
-                    <table class="table table-striped table-hover" style="text-align: center; margin-left: auto; margin-right: auto; width: 60%;">
+            <table class="table table-striped table-hover"
+              style="text-align: center; margin-left: auto; margin-right: auto; width: 60%;">
 
-                        <tr class="table-primary">
-                            <th>Parcel weight</th>
-                            <th>Prices</th>
-                        </tr>
+              <tr class="table-primary">
+                <th>Parcel weight</th>
+                <th>Prices</th>
+              </tr>
 
-                        <tr>
-                            <td>250g</td>
-                            <td>RS : 500.00</td>
-                        </tr>
+              <tr>
+                <td>250g</td>
+                <td>RS : 500.00</td>
+              </tr>
 
-                        <tr>
-                            <td>500g</td>
-                            <td>RS : 900.00</td>
-                        </tr>
+              <tr>
+                <td>500g</td>
+                <td>RS : 900.00</td>
+              </tr>
 
-                        <tr>
-                            <td>1kg</td>
-                            <td>RS : 1400.00</td>
-                        </tr>
+              <tr>
+                <td>1kg</td>
+                <td>RS : 1400.00</td>
+              </tr>
 
-                        <tr>
-                            <td>2kg</td>
-                            <td>RS : 2500.00</td>
-                        </tr>
+              <tr>
+                <td>2kg</td>
+                <td>RS : 2500.00</td>
+              </tr>
 
-                        <tr>
-                            <td>5kg+</td>
-                            <td>RS : 7000.00</td>
-                        </tr>
+              <tr>
+                <td>5kg+</td>
+                <td>RS : 7000.00</td>
+              </tr>
 
-                    </table>
+            </table>
 
-                </div>
+          </div>
 
-            </div>
         </div>
+      </div>
 
     </div>
 
-</section>
+  </section>
 
 
   <!-- service 1 section start -->
@@ -411,38 +445,44 @@
   <section id="carosel" style="background-color: rgb(235, 219, 179); height: 100vh;">
 
     <div class="slideshow-container">
-    
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="https://png.pngtree.com/thumb_back/fh260/background/20230718/pngtree-revolutionary-online-delivery-concept-with-real-time-tracking-for-seamless-home-image_3910580.jpg" style="width:100%">
-      <div class="text">We Deliver to +200 Countries</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFJq1i8mmCnE4WaEVDKT1s0W2aN0rj8i0ouSsybUsMyRWkUafl4xYcxJquL1ZEF_3TpqA&usqp=CAU" style="width:100%">
-      <div class="text">We Deliver Peace of Mind</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="https://png.pngtree.com/thumb_back/fh260/background/20230713/pngtree-mobile-app-delivery-service-empowering-e-commerce-transactions-through-transportation-by-image_3867044.jpg" style="width:100%">
-      <div class="text">We Deliver Packages on Time</div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="https://png.pngtree.com/thumb_back/fh260/background/20230718/pngtree-revolutionary-online-delivery-concept-with-real-time-tracking-for-seamless-home-image_3910580.jpg"
+          style="width:100%">
+        <div class="text">We Deliver to +200 Countries</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFJq1i8mmCnE4WaEVDKT1s0W2aN0rj8i0ouSsybUsMyRWkUafl4xYcxJquL1ZEF_3TpqA&usqp=CAU"
+          style="width:100%">
+        <div class="text">We Deliver Peace of Mind</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="https://png.pngtree.com/thumb_back/fh260/background/20230713/pngtree-mobile-app-delivery-service-empowering-e-commerce-transactions-through-transportation-by-image_3867044.jpg"
+          style="width:100%">
+        <div class="text">We Deliver Packages on Time</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
     </div>
     <br>
-    
+
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    
-    </section>
+
+  </section>
 
   <!-- carousel section end -->
 
@@ -456,8 +496,9 @@
 
 
       <div class="row pb-5" style="padding-top: 90px;">
-        
-        <h1 class="text-center pt-3" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;">Our Team</h1>
+
+        <h1 class="text-center pt-3" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;">Our Team
+        </h1>
 
         <!-- team 1 -->
         <div class="col-md-3 py-3">
@@ -465,8 +506,10 @@
           <div class="card h-100">
             <img src="ASSETS/IMAGES/vinoth.png" class="card-img-top" alt="team 1">
             <div class="card-body">
-              <h5 class="card-title text-center" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Dilakshan - Vinoth</h5>
-              <h6 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Service Delivery Manager</h6>
+              <h5 class="card-title text-center"
+                style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Dilakshan - Vinoth</h5>
+              <h6 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Service
+                Delivery Manager</h6>
             </div>
           </div>
 
@@ -477,8 +520,10 @@
           <div class="card h-100">
             <img src="ASSETS/IMAGES/eesan.jpg" class="card-img-top" alt="team 2">
             <div class="card-body">
-              <h5 class="card-title text-center" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Eesan</h5>
-              <h6 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Operations Manager</h6>
+              <h5 class="card-title text-center"
+                style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Eesan</h5>
+              <h6 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Operations
+                Manager</h6>
             </div>
           </div>
 
@@ -489,8 +534,10 @@
           <div class="card h-100">
             <img src="ASSETS/IMAGES/dilan.png" class="card-img-top" alt="team 3">
             <div class="card-body">
-              <h5 class="card-title text-center" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Dilankumar</h5>
-              <h6 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Supervisor</h6>
+              <h5 class="card-title text-center"
+                style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Dilankumar</h5>
+              <h6 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Supervisor
+              </h6>
             </div>
           </div>
 
@@ -501,8 +548,10 @@
           <div class="card h-100">
             <img src="ASSETS/IMAGES/Akm4.png" class="card-img-top" alt="team 4">
             <div class="card-body">
-              <h5 class="card-title text-center" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Akm Mohanapriyan</h5>
-              <h6 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Customer Service Representative</h6>
+              <h5 class="card-title text-center"
+                style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Akm Mohanapriyan</h5>
+              <h6 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Customer
+                Service Representative</h6>
             </div>
           </div>
 
@@ -514,7 +563,7 @@
 
   </section>
 
-   <!-- team section end -->
+  <!-- team section end -->
 
 
   <!-- footer section start -->
@@ -540,35 +589,42 @@
               </div>
             </div>
           </div>
-    
-           <!-- Useful links -->
+
+          <!-- Useful links -->
 
           <div class="col-lg-4">
             <div class="footer">
               <h5 class="pt-5">Useful Links</h5>
               <ul class="mt-5">
                 <li><a href="#" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Home</a></li>
-                <li><a href="#about" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>About Us</a></li>
-                <li><a href="#services" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Services</a></li>
-                <li><a href="#gallery" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Gallery</a></li>
-                <li><a href="contact.html" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Contact</a></li>
+                <li><a href="#about" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>About Us</a>
+                </li>
+                <li><a href="#services" class="qu-link"><span><i
+                        class="bi bi-chevron-right px-2"></i></span>Services</a></li>
+                <li><a href="#gallery" class="qu-link"><span><i class="bi bi-chevron-right px-2"></i></span>Gallery</a>
+                </li>
+                <li><a href="contact.html" class="qu-link"><span><i
+                        class="bi bi-chevron-right px-2"></i></span>Contact</a></li>
               </ul>
             </div>
           </div>
-    
+
           <!-- Our Social Media Networks -->
 
           <div class="col-lg-4">
             <div class="footer">
               <h5 class="pt-5">Our Social Networks</h5>
               <p class="mt-5">Follow our social media to know about our offers.</p>
-                <div class="d-flex smi">
-                  <p class="px-3"><a href="https://www.facebook.com/share/1BYyizKa97/?mibextid=qi2Omg"><i class="bi bi-facebook"></i></a></p>
-                  <p class="px-3"><a href="https://wa.me/+940761989195"><i class="bi bi-whatsapp"></i></a></p>
-                  <p class="px-3"><a href="https://www.tiktok.com/@akm_mohanapriyan?_t=ZS-8uSihfZ2KGN&_r=1"><i class="bi bi-tiktok"></i></a></p>
-                  <p class="px-3"><a href="https://www.instagram.com/blacklover_akm?igsh=cHB0NXZ4eW9qOWYy"><i class="bi bi-instagram"></i></a></p>
-                </div>                
-              
+              <div class="d-flex smi">
+                <p class="px-3"><a href="https://www.facebook.com/share/1BYyizKa97/?mibextid=qi2Omg"><i
+                      class="bi bi-facebook"></i></a></p>
+                <p class="px-3"><a href="https://wa.me/+940761989195"><i class="bi bi-whatsapp"></i></a></p>
+                <p class="px-3"><a href="https://www.tiktok.com/@akm_mohanapriyan?_t=ZS-8uSihfZ2KGN&_r=1"><i
+                      class="bi bi-tiktok"></i></a></p>
+                <p class="px-3"><a href="https://www.instagram.com/blacklover_akm?igsh=cHB0NXZ4eW9qOWYy"><i
+                      class="bi bi-instagram"></i></a></p>
+              </div>
+
             </div>
           </div>
 
@@ -580,16 +636,16 @@
         <div class="container">
           <div class="row foot pt-3">
             <div class="col-md-6">
-              <p>&copy; Copyrights <span class="akm">Akm </span><span >Courier Service</span> All Right Reserved</p>
+              <p>&copy; Copyrights <span class="akm">Akm </span><span>Courier Service</span> All Right Reserved</p>
             </div>
             <div class="col-md-6">
               <p style="float: right;">Designed By : <span class="name">Akm Mohanapriyan</span></p>
             </div>
           </div>
-          </div>
-  
+        </div>
+
       </section>
-      
+
     </footer>
 
 
@@ -598,8 +654,9 @@
   <!-- footer section end -->
 
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="ASSETS/JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="ASSETS/JS/script.js"></script>
 
 </body>
+
 </html>
